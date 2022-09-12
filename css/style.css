@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap');
+
+:root {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 10px;
+    --orange: #FF6C01;
+    --green: #00D008;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.orange {
+    background-color: var(--orange);
+}
+
+.orange:hover {
+    background-color: var(--orange);
+}
+
+.green {
+    background-color: var(--green);
+}
+
+.green:hover {
+    background-color: var(--green);
+}
+
+.white {
+    background-color: white !important;
+}
+
+.grey {
+    background-color: #ECECEC !important;
+}
+
+.m-r-240 {
+    margin-right: 240px;
+}
+
+.m-r-200 {
+    margin-right: 200px;
+}
+
+.m-r-140 {
+    margin-right: 140px;
+}
+
+.m-r-70 {
+    margin-right: 70px;
+}
+
+.m-r-20 {
+    margin-right: 20px;
+}
+
+.m-r-10 {
+    margin-right: 10px;
+}
+
+.m-l-140 {
+    margin-left: 140px;
+}
+
+.m-l-70 {
+    margin-left: 70px;
+}
+
+.m-t-30 {
+    margin-top: 30px;
+}
+
+.m-b-20 {
+    margin-bottom: 20px;
+}
+
+.p-l-30 {
+    padding-left: 30px;
+}
+
+.p-l-0 {
+    padding-left: 0;
+}
+
+.border-botton {
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.height {
+    min-height: 100px;
+}
+
+.navbar-mac {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 77px;
+}
+
+.location {
+    width: 500px;
+    min-height: 50px;
+    border: 2px solid #323232;
+    border-radius: 5px;
+    background-image: url(../img/location.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 22px;
+}
+
+.location[placeholder] {
+    padding-left: 30px;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: #A1A1A1;
+}
+
+.btn-navigation {
+    width: 98px;
+    height: 50px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.caption-mac {
+    height: 100px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 40px;
+}
+
+.caption-mac-txt {
+    font-weight: 800;
+    font-size: 3.6rem;
+    line-height: 4.4rem;
+    margin-left: 140px;
+}
+
+.container-color {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ECECEC;
+}
+
+.card-mac {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.card-shadow {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    height: 100%;
+}
+
+.card-mac-left {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-mac-right {
+    width: 40%;
+}
+
+.card-nav-list {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: #7B7B7B;
+}
+
+.current,
+.nav-link:hover {
+    width: 97px;
+    height: 34px;
+    background-color: #C4C4C4;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 1s;
+}
+
+.card-mac-txt {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    margin: 10px 0;
+}
+
+.card-mac-row {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-mac-item {
+    margin: 5px 0;
+}
+
+.mac-title {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+}
+
+.mac-text {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: #A2A2A2;
+}
+
+.mac-btn-primary {
+    background-color: var(--orange);
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid var(--orange);
+    display: none;
+}
+
+.mac-btn-primary:hover {
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+}
+
+.basket {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #FFFFFF;
+}
+
+.mac-basket {
+    display: flex;
+    justify-content: space-between;
+}
+
+.basket-price {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+}
+
+.card-mac-item:hover .basket-price {
+    display: none;
+}
+
+.card-mac-item:hover .mac-btn-primary {
+    display: inline-block;
+}
+
+.card-mac-item:hover path {
+    fill: var(--green);
+    stroke: var(--green);
+}
+
+.burger {
+    width: 93%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+.contact-mac {
+    background-color: white;
+    padding: 20px 0 20px 20px;
+}
+
+.contact-mac-txt-sm {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: #999999;
+    margin-bottom: 5px;
+}
+
+.contact-mac-txt-bg {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-bottom: 5px;
+}
+
+.btn-arrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px/50px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    margin: 30px 0;
+    position: fixed;
+    left: 10px;
+    bottom: 100px;
+}
+
+.order {
+    width: 90%;
+    margin: 20px;
+    background-color: white;
+    padding: 18px;
+}
+
+.order-header {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.order-txt-bg {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+}
+
+.order-btn {
+    max-width: 368px;
+    height: 62px;
+    background-color: var(--orange);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: 1px solid var(--orange);
+}
+
+.order-btn-txt {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: #FFFFFF;
+}
+
+.footer-container {
+    display: flex;
+    background: linear-gradient(91.41deg, #323232 25.4%, #000000 75.33%);
+    min-height: 100px;
+}
+
+.footer-width {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-item {
+    display: flex;
+}
+
+.footer-item-txt {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: #FFFFFF;
+}
+
+.footer-item-txt:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-item-img {
+    width: 40px;
+}
+
+@media screen and (max-width: 992px) {
+    .card-mac {
+        flex-wrap: wrap;
+    }
+
+    .card-mac-right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer-width {
+        flex-wrap: wrap;
+    }
+
+    .footer-item {
+        width: 100%;
+    }
+
+}
